@@ -1,0 +1,205 @@
+version: 2
+
+models:
+  - name: stg_restaurant__address
+    columns:
+      - name: address_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__city
+    columns:
+      - name: city_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__country
+    columns:
+      - name: country_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__customer
+    columns:
+      - name: customer_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__discount
+    columns:
+      - name: discount_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__employee
+    columns:
+      - name: employee_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__employee_shift
+    columns:
+      - name: employee_shift_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__facility
+    columns:
+      - name: facility_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__ingredient
+    columns:
+      - name: ingredient_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__ingredient_category
+    columns:
+      - name: ingredient_category_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__inventory
+    columns:
+      - name: inventory_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__job_title
+    columns:
+      - name: job_title_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__menu
+    columns:
+      - name: menu_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__menu_category
+    columns:
+      - name: menu_category_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__menu_item
+    columns:
+      - name: menu_item_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__menu_item_ingredient
+    columns:
+      - name: menu_item_ingredient_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__order
+    columns:
+      - name: order_id
+        tests:
+          - unique
+          - not_null
+      - name: status
+        tests:
+          - accepted_values:
+              values: ['pending', 'active', 'completed', 'cancelled']
+  - name: stg_restaurant__order_discount
+    columns:
+      - name: order_discount_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__order_item
+    columns:
+      - name: order_item_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__payment
+    columns:
+      - name: payment_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__payment_method
+    columns:
+      - name: payment_method_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__reservation
+    columns:
+      - name: reservation_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__restaurant
+    columns:
+      - name: restaurant_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__restaurant_employee
+    columns:
+      - name: restaurant_employee_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__restaurant_facility
+    columns:
+      - name: restaurant_facility_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__review
+    columns:
+      - name: review_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__shift
+    columns:
+      - name: shift_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__state
+    columns:
+      - name: state_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__supplier
+    columns:
+      - name: supplier_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__supplier_category
+    columns:
+      - name: supplier_category_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__supply_order
+    columns:
+      - name: supply_order_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__supply_order_item
+    columns:
+      - name: supply_order_item_id
+        tests:
+          - unique
+          - not_null
+  - name: stg_restaurant__dining_table
+    columns:
+      - name: dining_table_id
+        tests:
+          - unique
+          - not_null

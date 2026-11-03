@@ -1,0 +1,15 @@
+# Copy to ~/.dbt/profiles.yml (Windows: C:\Users\<you>\.dbt\profiles.yml) and fill in.
+# Never commit the real profiles.yml.
+restaurant_analytics:
+  target: dev
+  outputs:
+    dev:
+      type: snowflake
+      account: ORG-ACCOUNT            # e.g. abcdefg-xy12345 (hyphen, not underscore)
+      user: YOUR_SNOWFLAKE_USERNAME
+      password: "{{ env_var('SNOWFLAKE_PASSWORD') }}"
+      role: RESTAURANT_DBT_ROLE
+      warehouse: RESTAURANT_COMPUTE_WH
+      database: RESTAURANT_DB
+      schema: STAGING
+      threads: 4

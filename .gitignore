@@ -1,0 +1,22 @@
+# Secrets and local settings
+profiles.yml
+.env
+*.p8
+*.pem
+.streamlit/secrets.toml
+.user.yml
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# dbt build output
+target/
+dbt_packages/
+logs/
+
+# Editor and system files
+.vscode/
+.DS_Store
+Thumbs.db

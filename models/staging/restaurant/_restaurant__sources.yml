@@ -1,0 +1,41 @@
+version: 2
+
+sources:
+  - name: restaurant_raw
+    description: Raw tables loaded directly into Snowflake
+    database: RESTAURANT_DB
+    schema: PUBLIC
+    tables:
+      - name: addresses
+      - name: cities
+      - name: countries
+      - name: customers
+      - name: discounts
+      - name: employees
+      - name: employee_shifts
+      - name: facilities
+      - name: ingredients
+      - name: ingredient_categories
+      - name: inventories
+      - name: job_titles
+      - name: menus
+      - name: menu_categories
+      - name: menu_items
+      - name: menu_item_ingredients
+      - name: orders
+      - name: order_discounts
+      - name: order_items
+      - name: payments
+      - name: payment_methods
+      - name: reservations
+      - name: restaurants
+      - name: restaurant_employees
+      - name: restaurant_facilities
+      - name: reviews
+      - name: shifts
+      - name: states
+      - name: suppliers
+      - name: supplier_categories
+      - name: supply_orders
+      - name: supply_order_items
+      - name: tables
