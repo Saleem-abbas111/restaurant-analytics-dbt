@@ -26,10 +26,19 @@ The browser never talks to Snowflake or Gemini directly. All credentials live in
 - **Customer Reviews:** ratings by restaurant, best rated and needs attention.
 - **AI Data Analyst:** ask a question in plain English. Gemini writes a SQL query, the backend validates and runs it on the marts, and Gemini summarises the result as key findings, recommended actions and caveats.
 
-<!-- Add screenshots after saving them in docs/, then remove these comment markers:
-![Overview](docs/overview.png)
-![AI Data Analyst](docs/analyst.png)
--->
+## Screenshots
+
+**Overview**
+
+![Overview: KPIs and sales trend](docs/overview_01.png)
+![Overview: top restaurants and weekday sales](docs/overview_02.png)
+
+**AI Data Analyst**
+
+![AI Data Analyst: question and key findings](docs/analyst_01.png)
+![AI Data Analyst: recommendations, chart and generated SQL](docs/analyst_02.png)
+
+*The Overview totals use sales for every order that is not cancelled. The AI Analyst example ranks restaurants by completed sales only, so the two rankings differ. All data is synthetic.*
 
 ## Data model
 
