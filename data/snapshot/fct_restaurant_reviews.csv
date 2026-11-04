@@ -1,0 +1,145 @@
+restaurant_id,restaurant_name,review_count,average_rating,lowest_rating,highest_rating,first_review_date,latest_review_date
+52,Number Point Special Reason,1,3.00,3,3,2024-01-25,2024-01-25
+127,Major Example,1,1.00,1,1,2023-01-09,2023-01-09
+13,Simple Plain Order After,5,2.80,2,4,2023-03-24,2025-09-26
+134,Clear Group,1,5.00,5,5,2023-02-24,2023-02-24
+1,Quiet Steady Reason,31,2.87,1,5,2023-01-10,2025-10-07
+90,Recent Simple,2,3.50,2,5,2025-09-22,2025-11-11
+45,Enough Final Because Order,5,3.20,1,4,2023-01-21,2025-06-22
+70,Single Second,5,3.00,1,5,2023-10-30,2025-04-22
+38,Bright Close,2,4.00,4,4,2025-05-16,2025-08-27
+57,Public Within Between,3,2.00,1,3,2023-11-30,2024-07-23
+135,Inside Weekly Usual,2,3.00,2,4,2023-09-15,2024-05-16
+11,Still Toward,5,3.40,2,5,2023-07-26,2025-12-27
+46,Short Another Inside Always,3,2.67,2,4,2023-12-04,2025-03-08
+88,Because Public,4,2.75,2,4,2025-01-15,2025-11-13
+140,Issue Inside Useful Update,2,4.50,4,5,2024-07-13,2025-11-05
+19,Group Local,7,2.14,1,5,2023-07-23,2025-11-21
+64,Public Large Without Simple,2,3.00,2,4,2023-02-11,2023-05-08
+18,Usual Clear Nearly,3,4.00,2,5,2023-12-14,2025-09-23
+132,Outside Careful Small Between,2,3.00,2,4,2023-11-21,2024-03-19
+128,Example Simple Section Other,3,4.00,3,5,2023-05-10,2025-11-27
+5,Weekly General,9,2.78,1,5,2023-05-12,2025-09-15
+133,Every Daily Recent Outside,3,3.67,3,4,2024-03-06,2025-06-10
+56,Follow Outside Easy Yearly,6,2.17,2,3,2023-05-18,2025-07-03
+12,Recent Light,2,3.00,2,4,2024-06-13,2024-10-22
+87,Other Whole,4,3.00,1,5,2024-03-01,2024-12-26
+98,Number Today,6,3.00,1,5,2023-03-06,2024-08-03
+6,Along Notice,7,2.86,1,4,2023-01-14,2024-04-25
+8,Partial Total Moving,6,3.50,1,5,2023-02-14,2025-10-24
+76,Useful Later About Period,3,3.67,2,5,2023-01-06,2024-12-19
+47,Simple Careful Quick,5,2.00,1,3,2023-10-02,2025-10-07
+58,Early Group Second,4,3.75,2,5,2023-02-24,2025-01-11
+95,Short Number Result Simple,4,4.25,3,5,2023-01-18,2025-03-29
+137,Bright Between,1,2.00,2,2,2023-10-18,2023-10-18
+71,After About Several Recent,3,3.00,2,4,2024-08-04,2025-10-11
+61,Follow Quiet,2,3.00,2,4,2024-01-05,2025-10-26
+94,Order Summary,1,5.00,5,5,2025-06-19,2025-06-19
+10,Level Point,4,3.50,3,4,2023-08-01,2025-10-13
+29,Order Moment Result Ground,2,2.50,1,4,2023-06-02,2024-09-24
+120,Other Along,1,3.00,3,3,2025-06-04,2025-06-04
+53,Recent Direct,2,3.50,3,4,2025-02-05,2025-06-26
+3,Plain Record Various Section,13,3.23,1,5,2023-02-21,2025-09-15
+34,Without Daily Level,2,1.50,1,2,2024-03-03,2024-04-20
+7,Today Local Early,5,2.60,1,4,2023-07-11,2025-10-17
+139,System Total,2,3.00,1,5,2024-01-29,2024-02-10
+54,Enough High Before,2,2.50,2,3,2023-10-04,2025-02-28
+48,Again Short Update Often,2,2.00,2,2,2023-11-22,2024-01-10
+36,Every Little,3,3.00,2,4,2024-05-31,2025-11-10
+17,Steady Little,3,2.00,1,3,2024-10-12,2025-10-04
+37,Moving First Long,2,3.50,3,4,2024-12-11,2025-08-28
+141,Every Later Second Final,2,2.50,1,4,2023-10-22,2025-03-01
+22,Easy Major,2,3.50,3,4,2023-01-25,2025-02-09
+79,System Regular Within Special,3,3.00,1,5,2023-07-26,2025-01-25
+110,Open Moment Weekly Nearly,1,3.00,3,3,2024-08-31,2024-08-31
+21,Common Moment,5,2.20,1,4,2023-09-20,2025-08-20
+107,Change Inside Several,2,4.00,4,4,2023-03-09,2025-09-22
+106,Recent Partial Period,2,2.00,2,2,2023-11-01,2025-01-01
+30,Morning Point,1,2.00,2,2,2024-03-28,2024-03-28
+116,Summary System Long,0,,,,,
+20,Update Major,3,4.00,2,5,2023-05-06,2025-03-13
+25,Plain Daily Light Simple,1,2.00,2,2,2023-01-15,2023-01-15
+27,Strong Light Small,6,3.33,2,4,2023-05-16,2025-11-27
+2,Again Inside Change Daily,16,2.88,1,5,2023-01-18,2025-08-17
+59,Without Early,1,4.00,4,4,2025-05-10,2025-05-10
+44,Short Clear,6,3.17,2,4,2023-06-11,2025-05-12
+131,Always Quick Second,5,2.20,1,4,2023-05-15,2025-10-21
+60,Update Matter,3,4.00,3,5,2023-08-18,2025-01-16
+51,Strong Without Group Moving,3,3.00,2,4,2023-10-14,2023-11-15
+100,Close Order Great,6,3.17,1,5,2023-04-10,2025-06-07
+42,Summary Moment Every Notice,2,3.00,3,3,2023-04-19,2025-09-08
+129,Several Various Month,2,3.50,3,4,2024-11-25,2025-08-15
+33,Another Level,3,1.67,1,3,2023-05-13,2025-08-11
+62,System Always Single,2,3.00,3,3,2024-04-25,2025-01-19
+111,Recent Before Weekly,1,4.00,4,4,2024-09-08,2024-09-08
+102,Outside Enough Major,5,3.40,2,5,2023-02-08,2025-10-05
+77,Strong Month Simple Special,2,2.50,1,4,2023-08-16,2024-01-26
+41,Ground Along Before Major,2,2.50,2,3,2023-02-07,2023-05-19
+119,Outside Within Special Minor,4,2.75,1,4,2023-10-04,2025-11-26
+49,Order Common Small,4,4.00,2,5,2023-01-17,2025-12-13
+31,Short Month,6,3.00,1,5,2023-04-23,2025-09-02
+4,Matter Order Minor,12,2.92,1,5,2023-02-13,2025-06-27
+16,General Light Still,5,2.80,1,5,2023-03-10,2025-07-18
+125,Within Close Issue,1,4.00,4,4,2024-01-26,2024-01-26
+15,Number Final,3,3.33,3,4,2023-12-10,2025-09-26
+118,Open Follow Later,1,1.00,1,1,2023-10-28,2023-10-28
+124,About Various,3,4.33,4,5,2024-11-23,2025-01-03
+84,Month About Local Section,1,4.00,4,4,2023-01-13,2023-01-13
+67,Nearly Without,4,2.50,1,5,2023-05-18,2025-03-14
+91,Within About Simple,2,2.50,2,3,2023-11-16,2024-01-22
+83,Quick Before Careful Strong,2,2.50,2,3,2024-01-18,2025-12-18
+40,Because Steady,4,1.75,1,3,2023-03-11,2025-05-08
+73,Within Long,3,3.00,3,3,2023-07-20,2024-06-04
+89,Direct Ready,1,2.00,2,2,2025-02-26,2025-02-26
+9,Yearly Clear,7,3.57,1,5,2023-02-24,2025-03-21
+121,Again Given,1,4.00,4,4,2025-01-23,2025-01-23
+112,Point Group Often,1,4.00,4,4,2025-07-25,2025-07-25
+92,Happen Later Normal,2,2.50,2,3,2023-09-05,2025-03-01
+65,Careful Morning Useful Common,1,3.00,3,3,2024-08-01,2024-08-01
+126,Ground Usual First,1,2.00,2,2,2023-12-13,2023-12-13
+82,Daily Result Along Strong,1,4.00,4,4,2025-03-07,2025-03-07
+80,Follow Minor Long First,1,3.00,3,3,2025-07-10,2025-07-10
+14,Between Minor Light Morning,1,1.00,1,1,2025-06-15,2025-06-15
+101,Group Little Often,1,5.00,5,5,2024-06-02,2024-06-02
+39,Ground Number Local First,1,4.00,4,4,2024-08-21,2024-08-21
+23,Result Large,1,4.00,4,4,2025-10-11,2025-10-11
+142,Review Support,1,2.00,2,2,2023-08-09,2023-08-09
+66,Example Because Clear,0,,,,,
+123,Record Nearly About,0,,,,,
+75,Moving Within,0,,,,,
+109,Careful Every Public Simple,0,,,,,
+50,Support Reason,0,,,,,
+26,Inside Second Within,7,2.57,1,5,2023-01-01,2025-09-16
+35,Example Toward Common Another,5,3.00,2,5,2023-12-12,2025-10-19
+122,Single Quick Morning Outside,5,3.00,2,4,2023-12-25,2025-10-14
+68,Large Normal Easy,2,4.00,3,5,2023-05-11,2024-05-06
+93,Daily Record Ground Quick,1,4.00,4,4,2025-01-31,2025-01-31
+43,Along After Change Inside,3,2.33,2,3,2023-06-09,2024-11-04
+32,Moment Ready,5,3.20,1,4,2023-04-22,2025-12-18
+103,Morning Direct,2,4.00,4,4,2023-03-17,2023-08-05
+78,Moving Second High,2,2.00,1,3,2023-11-06,2025-08-17
+108,Period Open,3,2.67,2,3,2023-10-15,2024-05-15
+104,Change Between,4,4.25,3,5,2023-05-31,2025-10-28
+143,Inside Careful Another Whole,4,4.00,2,5,2024-10-23,2025-12-14
+117,Total Ready Always,1,1.00,1,1,2024-11-25,2024-11-25
+130,Weekly Update Between,1,2.00,2,2,2024-09-08,2024-09-08
+138,Large Total,2,4.50,4,5,2024-12-08,2025-05-23
+97,Number Moving,1,2.00,2,2,2024-04-11,2024-04-11
+113,Yearly Light Along,2,4.00,3,5,2024-10-23,2025-06-16
+115,Local Careful,2,1.50,1,2,2025-01-21,2025-05-17
+136,Partial Morning,1,4.00,4,4,2024-01-07,2024-01-07
+85,Still Along,3,4.00,3,5,2023-08-09,2025-04-21
+28,Follow After,2,3.00,1,5,2023-09-10,2025-10-28
+81,Useful Yearly Happen,1,1.00,1,1,2024-09-24,2024-09-24
+86,Period Total,2,3.50,3,4,2023-11-10,2025-03-08
+74,Moving Open High,1,3.00,3,3,2023-01-28,2023-01-28
+114,Easy Often Regular,1,5.00,5,5,2025-05-05,2025-05-05
+63,Bright Ground Total Toward,1,5.00,5,5,2024-03-22,2024-03-22
+24,About High Outside,0,,,,,
+99,Special Early Great Every,0,,,,,
+144,Summary Change Strong Matter,0,,,,,
+72,Review Second Close Enough,4,3.50,2,4,2023-06-02,2024-06-27
+69,Yearly High Moment,2,3.00,2,4,2024-09-28,2025-10-20
+105,Steady Every Little,2,2.00,2,2,2024-02-03,2024-10-22
+96,Result Number Total Direct,1,3.00,3,3,2025-05-14,2025-05-14
+55,Ready Later Ground,0,,,,,

@@ -1,0 +1,435 @@
+inventory_id,restaurant_id,restaurant_name,ingredient_id,ingredient_name,ingredient_category_name,unit,quantity_on_hand
+1,140,Issue Inside Useful Update,10,Moving Follow,Number Again Steady,morning,43.4
+2,2,Again Inside Change Daily,29,Change Update Notice Plain,High Small,plain major bright,26.3
+3,121,Again Given,1,Major High Along Careful,Always Around About,detail quick,23.0
+4,60,Update Matter,109,Direct Given Daily Partial,Bright Another Example,reason group bright,21.0
+5,82,Daily Result Along Strong,13,Light Usual,Early Common,review given,25.4
+6,37,Moving First Long,56,Month Useful Little Happen,System Notice,outside,6.7
+7,2,Again Inside Change Daily,82,Easy Level,Local Along Another Toward,example before close,13.8
+8,46,Short Another Inside Always,5,System Result Because,Support Inside Final,before total useful,7.5
+9,118,Open Follow Later,62,Outside Given Still Recent,Quiet Close About Quick,close follow,10.2
+10,36,Every Little,57,Support Before,Always Around About,notice useful,43.5
+11,115,Local Careful,4,High Short,Bright Around,without daily again,11.6
+12,30,Morning Point,25,Today Between Month Small,Always Around About,within along,10.3
+13,115,Local Careful,66,Steady Clear Another,Number Again Steady,final normal,3.5
+14,61,Follow Quiet,60,Support About Again,Weekly Summary,toward detail month,37.2
+15,92,Happen Later Normal,14,Level Large Number Useful,Whole Usual Nearly Example,direct nearly,15.4
+16,23,Result Large,97,Local Today Period Simple,Ground Several Major Direct,quick,26.2
+17,91,Within About Simple,42,Yearly After,Special Minor,useful daily level,18.7
+18,59,Without Early,55,Quick High Moving,Change Light Second,given local usual,3.1
+19,107,Change Inside Several,1,Major High Along Careful,Always Around About,detail quick,37.0
+20,45,Enough Final Because Order,118,Strong Every Second Month,Number Again Steady,clear,8.5
+21,6,Along Notice,60,Support About Again,Weekly Summary,toward detail month,6.9
+22,1,Quiet Steady Reason,4,High Short,Bright Around,without daily again,2.2
+23,12,Recent Light,47,Large Change Strong Follow,Early Plain,section minor nearly,22.1
+24,18,Usual Clear Nearly,7,Major Partial,Daily Steady Enough,high second,21.6
+25,1,Quiet Steady Reason,80,Given Yearly Easy,Weekly Summary,final,27.0
+26,18,Usual Clear Nearly,15,High Change Several Careful,Always Around About,along again large,1.6
+27,81,Useful Yearly Happen,87,Steady Follow,Outside Because Level Ground,record yearly short,33.3
+28,4,Matter Order Minor,39,About Period Light Detail,Again Light Open Simple,high,6.6
+29,100,Close Order Great,131,Minor Enough Light,Again Major,inside,28.9
+30,1,Quiet Steady Reason,6,Update Morning,Easy Strong,common update,23.7
+31,95,Short Number Result Simple,103,Little Every Record Toward,Quiet Weekly Clear,reason normal,47.7
+32,138,Large Total,102,Whole Group Around Yearly,Support Public Always Large,bright follow several,41.6
+33,9,Yearly Clear,3,Early Inside Enough Normal,Detail Plain,without inside,12.5
+34,37,Moving First Long,28,Small Large,Natural Given Normal Period,within quick,24.0
+35,125,Within Close Issue,59,Partial Moment Review,Today Short High,after ready simple,32.6
+36,49,Order Common Small,13,Light Usual,Early Common,review given,44.8
+37,133,Every Daily Recent Outside,130,Recent Number,Record Several,every,6.0
+38,18,Usual Clear Nearly,34,Daily Short Special Inside,Before Update Given,section clear,31.0
+39,12,Recent Light,39,About Period Light Detail,Again Light Open Simple,high,39.0
+40,2,Again Inside Change Daily,14,Level Large Number Useful,Whole Usual Nearly Example,direct nearly,4.9
+41,30,Morning Point,78,Bright Update,Often Month Point Period,review,44.9
+42,140,Issue Inside Useful Update,26,Often Major,Along Order Several Nearly,large period,43.4
+43,130,Weekly Update Between,18,Special Local,Always Moment,moving example,9.4
+44,8,Partial Total Moving,2,Whole Month Various,Summary Again Notice Enough,high support,7.7
+45,64,Public Large Without Simple,63,Usual Large,Ground Several Major Direct,around common,49.3
+46,90,Recent Simple,121,Still Regular,Clear Ready Open,high about,16.4
+47,55,Ready Later Ground,68,Direct Detail Given,Number Again Steady,after still every,28.2
+48,68,Large Normal Easy,4,High Short,Bright Around,without daily again,5.9
+49,11,Still Toward,54,Ready Every,Number Again Steady,about,48.8
+50,10,Level Point,21,Useful Number Always Open,Update Second,simple single,47.2
+51,95,Short Number Result Simple,2,Whole Month Various,Summary Again Notice Enough,high support,35.6
+52,25,Plain Daily Light Simple,23,Plain Ground,Another Partial Often,special easy,7.2
+53,57,Public Within Between,5,System Result Because,Support Inside Final,before total useful,3.6
+54,85,Still Along,113,Nearly Quick Detail Every,Update Partial Around,example first,46.0
+55,1,Quiet Steady Reason,76,Easy Support Large,Number Again Steady,early,28.4
+56,1,Quiet Steady Reason,3,Early Inside Enough Normal,Detail Plain,without inside,18.3
+57,33,Another Level,137,Another Total,Again Light Open Simple,whole toward partial,15.8
+58,123,Record Nearly About,6,Update Morning,Easy Strong,common update,28.5
+59,9,Yearly Clear,81,Final Minor Detail,Several Short Major Before,group local morning,38.2
+60,59,Without Early,24,General Yearly Steady,Record System About Change,section number system,47.6
+61,10,Level Point,1,Major High Along Careful,Always Around About,detail quick,38.4
+62,94,Order Summary,137,Another Total,Again Light Open Simple,whole toward partial,24.9
+63,1,Quiet Steady Reason,74,System General,Quiet Local Month Common,quiet yearly,2.6
+64,44,Short Clear,25,Today Between Month Small,Always Around About,within along,10.3
+65,4,Matter Order Minor,20,Clear Second Notice Common,Month Before After,long,26.5
+66,9,Yearly Clear,20,Clear Second Notice Common,Month Before After,long,22.8
+67,21,Common Moment,130,Recent Number,Record Several,every,38.4
+68,89,Direct Ready,13,Light Usual,Early Common,review given,29.3
+69,59,Without Early,21,Useful Number Always Open,Update Second,simple single,16.4
+70,13,Simple Plain Order After,6,Update Morning,Easy Strong,common update,32.3
+71,8,Partial Total Moving,67,Issue Small,Weekly Summary,section minor,38.8
+72,46,Short Another Inside Always,2,Whole Month Various,Summary Again Notice Enough,high support,33.5
+73,1,Quiet Steady Reason,1,Major High Along Careful,Always Around About,detail quick,6.0
+74,1,Quiet Steady Reason,1,Major High Along Careful,Always Around About,detail quick,40.1
+75,2,Again Inside Change Daily,1,Major High Along Careful,Always Around About,detail quick,14.0
+76,131,Always Quick Second,21,Useful Number Always Open,Update Second,simple single,11.4
+77,96,Result Number Total Direct,20,Clear Second Notice Common,Month Before After,long,36.2
+78,40,Because Steady,53,Total Great,Level General,toward notice final,27.2
+79,4,Matter Order Minor,87,Steady Follow,Outside Because Level Ground,record yearly short,24.3
+80,103,Morning Direct,126,Total Yearly High Period,Another Partial Often,record,38.8
+81,25,Plain Daily Light Simple,137,Another Total,Again Light Open Simple,whole toward partial,3.7
+82,18,Usual Clear Nearly,39,About Period Light Detail,Again Light Open Simple,high,32.5
+83,28,Follow After,79,Open Local Daily Great,Quiet Close About Quick,steady nearly every,4.6
+84,30,Morning Point,7,Major Partial,Daily Steady Enough,high second,17.4
+85,26,Inside Second Within,25,Today Between Month Small,Always Around About,within along,17.0
+86,87,Other Whole,62,Outside Given Still Recent,Quiet Close About Quick,close follow,42.5
+87,3,Plain Record Various Section,39,About Period Light Detail,Again Light Open Simple,high,5.9
+88,114,Easy Often Regular,5,System Result Because,Support Inside Final,before total useful,45.3
+89,26,Inside Second Within,9,Short Second Morning,After Nearly Later,careful today because,42.5
+90,82,Daily Result Along Strong,42,Yearly After,Special Minor,useful daily level,24.9
+91,68,Large Normal Easy,2,Whole Month Various,Summary Again Notice Enough,high support,23.9
+92,87,Other Whole,72,General Always Ground,Early Month,example weekly,20.6
+93,82,Daily Result Along Strong,80,Given Yearly Easy,Weekly Summary,final,36.3
+94,75,Moving Within,119,Notice Between Nearly Other,Number Again Steady,given,27.4
+95,5,Weekly General,2,Whole Month Various,Summary Again Notice Enough,high support,36.6
+96,2,Again Inside Change Daily,40,Little Moving,Weekly Summary,public quiet,4.8
+97,110,Open Moment Weekly Nearly,54,Ready Every,Number Again Steady,about,22.8
+98,64,Public Large Without Simple,19,Partial Matter After,Bright Another Example,within,23.2
+99,26,Inside Second Within,23,Plain Ground,Another Partial Often,special easy,2.2
+100,132,Outside Careful Small Between,1,Major High Along Careful,Always Around About,detail quick,43.0
+101,11,Still Toward,74,System General,Quiet Local Month Common,quiet yearly,49.1
+102,10,Level Point,4,High Short,Bright Around,without daily again,19.9
+103,45,Enough Final Because Order,127,Short Level Period Other,Ground Useful Summary,regular recent,30.7
+104,64,Public Large Without Simple,20,Clear Second Notice Common,Month Before After,long,29.7
+105,41,Ground Along Before Major,94,Careful Other Detail Common,Open Special,point,2.9
+106,86,Period Total,84,Record Notice Yearly First,Ready Recent Local,high,37.4
+107,20,Update Major,24,General Yearly Steady,Record System About Change,section number system,17.7
+108,1,Quiet Steady Reason,31,Group Detail,Common Given Careful,summary moving review,1.2
+109,27,Strong Light Small,34,Daily Short Special Inside,Before Update Given,section clear,18.4
+110,23,Result Large,9,Short Second Morning,After Nearly Later,careful today because,12.4
+111,65,Careful Morning Useful Common,10,Moving Follow,Number Again Steady,morning,44.8
+112,2,Again Inside Change Daily,12,Number Direct About,Result Second Example Ready,after strong steady,40.9
+113,18,Usual Clear Nearly,14,Level Large Number Useful,Whole Usual Nearly Example,direct nearly,22.6
+114,7,Today Local Early,116,Without Change,Change Light Second,yearly,43.3
+115,88,Because Public,5,System Result Because,Support Inside Final,before total useful,46.6
+116,56,Follow Outside Easy Yearly,6,Update Morning,Easy Strong,common update,12.1
+117,64,Public Large Without Simple,127,Short Level Period Other,Ground Useful Summary,regular recent,3.9
+118,28,Follow After,18,Special Local,Always Moment,moving example,1.7
+119,50,Support Reason,1,Major High Along Careful,Always Around About,detail quick,25.1
+120,42,Summary Moment Every Notice,29,Change Update Notice Plain,High Small,plain major bright,1.0
+121,130,Weekly Update Between,1,Major High Along Careful,Always Around About,detail quick,2.9
+122,73,Within Long,3,Early Inside Enough Normal,Detail Plain,without inside,1.1
+123,1,Quiet Steady Reason,2,Whole Month Various,Summary Again Notice Enough,high support,41.5
+124,22,Easy Major,113,Nearly Quick Detail Every,Update Partial Around,example first,15.6
+125,9,Yearly Clear,30,Notice Second,Small Little Because Toward,daily steady little,8.9
+126,125,Within Close Issue,37,Useful Enough Between,Ground Several Major Direct,second,46.1
+127,20,Update Major,9,Short Second Morning,After Nearly Later,careful today because,23.6
+128,94,Order Summary,5,System Result Because,Support Inside Final,before total useful,21.2
+129,82,Daily Result Along Strong,96,Natural Other Quick Ground,Later Inside Steady,period high plain,9.3
+130,10,Level Point,7,Major Partial,Daily Steady Enough,high second,44.5
+131,16,General Light Still,119,Notice Between Nearly Other,Number Again Steady,given,29.5
+132,48,Again Short Update Often,89,Easy Period,Moment Month Major Minor,another minor,26.9
+133,22,Easy Major,11,First Early,Number Again Steady,inside group close,36.1
+134,4,Matter Order Minor,111,Example General System,Quiet Close About Quick,issue result,34.8
+135,30,Morning Point,2,Whole Month Various,Summary Again Notice Enough,high support,1.9
+136,33,Another Level,123,Outside Little Around Single,Example Follow Normal,total close various,32.0
+137,15,Number Final,23,Plain Ground,Another Partial Often,special easy,36.1
+138,64,Public Large Without Simple,1,Major High Along Careful,Always Around About,detail quick,43.5
+139,94,Order Summary,85,Open Notice Little,Other Month,open group,40.1
+140,51,Strong Without Group Moving,2,Whole Month Various,Summary Again Notice Enough,high support,44.7
+141,13,Simple Plain Order After,99,Still System Great Reason,Record System About Change,around given,28.9
+142,13,Simple Plain Order After,1,Major High Along Careful,Always Around About,detail quick,44.5
+143,1,Quiet Steady Reason,1,Major High Along Careful,Always Around About,detail quick,28.9
+144,126,Ground Usual First,108,System General Great Between,Summary Again Notice Enough,because,36.9
+145,4,Matter Order Minor,26,Often Major,Along Order Several Nearly,large period,18.8
+146,38,Bright Close,45,Inside Happen Usual Whole,Quiet Close About Quick,normal direct outside,44.3
+147,34,Without Daily Level,1,Major High Along Careful,Always Around About,detail quick,49.3
+148,62,System Always Single,36,Enough Plain Matter,Simple Direct,still,10.3
+149,35,Example Toward Common Another,42,Yearly After,Special Minor,useful daily level,28.9
+150,53,Recent Direct,48,Before Order Ready,Review Notice Reason Local,change recent without,34.2
+151,141,Every Later Second Final,34,Daily Short Special Inside,Before Update Given,section clear,5.1
+152,97,Number Moving,32,Detail Quick Reason,Quiet Close About Quick,early,11.1
+153,61,Follow Quiet,61,Morning Inside Order,Short Public,single month,32.4
+154,100,Close Order Great,143,Nearly Bright Given,Minor Review Summary,result,3.8
+155,52,Number Point Special Reason,70,Weekly Open Record Usual,Summary Again Notice Enough,follow,36.3
+156,120,Other Along,9,Short Second Morning,After Nearly Later,careful today because,29.5
+157,15,Number Final,16,Plain Level Single Clear,Ready Recent Local,still quick,45.2
+158,138,Large Total,139,Special Because Always,Another Partial Often,regular recent ground,5.6
+159,1,Quiet Steady Reason,19,Partial Matter After,Bright Another Example,within,21.2
+160,4,Matter Order Minor,8,Support Direct,Toward Again Review Several,regular,44.5
+161,1,Quiet Steady Reason,4,High Short,Bright Around,without daily again,48.5
+162,26,Inside Second Within,1,Major High Along Careful,Always Around About,detail quick,7.0
+163,141,Every Later Second Final,18,Special Local,Always Moment,moving example,32.0
+164,137,Bright Between,39,About Period Light Detail,Again Light Open Simple,high,17.0
+165,112,Point Group Often,5,System Result Because,Support Inside Final,before total useful,26.2
+166,2,Again Inside Change Daily,141,Along Partial Review,Final Several,natural other,19.4
+167,67,Nearly Without,87,Steady Follow,Outside Because Level Ground,record yearly short,35.1
+168,3,Plain Record Various Section,77,Inside Close,Support Inside Final,change,1.1
+169,133,Every Daily Recent Outside,70,Weekly Open Record Usual,Summary Again Notice Enough,follow,5.9
+170,28,Follow After,110,Detail Direct,Final Several,about,20.5
+171,7,Today Local Early,140,After Issue,Small Little Because Toward,steady careful,18.0
+172,138,Large Total,1,Major High Along Careful,Always Around About,detail quick,16.3
+173,83,Quick Before Careful Strong,11,First Early,Number Again Steady,inside group close,30.9
+174,6,Along Notice,130,Recent Number,Record Several,every,18.1
+175,27,Strong Light Small,56,Month Useful Little Happen,System Notice,outside,27.7
+176,106,Recent Partial Period,28,Small Large,Natural Given Normal Period,within quick,32.9
+177,6,Along Notice,110,Detail Direct,Final Several,about,22.8
+178,57,Public Within Between,93,High Steady Support,Final Several,still,22.1
+179,76,Useful Later About Period,31,Group Detail,Common Given Careful,summary moving review,45.2
+180,30,Morning Point,41,Reason Change Outside,Final Several,point,19.5
+181,12,Recent Light,116,Without Change,Change Light Second,yearly,12.9
+182,61,Follow Quiet,82,Easy Level,Local Along Another Toward,example before close,35.2
+183,22,Easy Major,1,Major High Along Careful,Always Around About,detail quick,34.1
+184,37,Moving First Long,98,System Between Close Usual,Clear Moving,along,32.0
+185,36,Every Little,21,Useful Number Always Open,Update Second,simple single,19.6
+186,8,Partial Total Moving,56,Month Useful Little Happen,System Notice,outside,21.3
+187,23,Result Large,81,Final Minor Detail,Several Short Major Before,group local morning,39.0
+188,1,Quiet Steady Reason,1,Major High Along Careful,Always Around About,detail quick,47.6
+189,49,Order Common Small,25,Today Between Month Small,Always Around About,within along,9.8
+190,133,Every Daily Recent Outside,57,Support Before,Always Around About,notice useful,4.3
+191,134,Clear Group,71,Great Point,Review Notice Reason Local,partial notice quiet,1.2
+192,1,Quiet Steady Reason,8,Support Direct,Toward Again Review Several,regular,16.2
+193,56,Follow Outside Easy Yearly,43,Order High Single,Given Group Point Order,regular notice,5.3
+194,56,Follow Outside Easy Yearly,29,Change Update Notice Plain,High Small,plain major bright,3.6
+195,25,Plain Daily Light Simple,83,Daily Change Again,Still Update Month,early matter,48.6
+196,69,Yearly High Moment,89,Easy Period,Moment Month Major Minor,another minor,37.1
+197,1,Quiet Steady Reason,39,About Period Light Detail,Again Light Open Simple,high,44.6
+198,94,Order Summary,3,Early Inside Enough Normal,Detail Plain,without inside,22.6
+199,66,Example Because Clear,29,Change Update Notice Plain,High Small,plain major bright,4.8
+200,21,Common Moment,14,Level Large Number Useful,Whole Usual Nearly Example,direct nearly,20.4
+201,109,Careful Every Public Simple,127,Short Level Period Other,Ground Useful Summary,regular recent,12.7
+202,3,Plain Record Various Section,32,Detail Quick Reason,Quiet Close About Quick,early,22.3
+203,9,Yearly Clear,19,Partial Matter After,Bright Another Example,within,22.4
+204,107,Change Inside Several,21,Useful Number Always Open,Update Second,simple single,2.3
+205,21,Common Moment,13,Light Usual,Early Common,review given,2.2
+206,99,Special Early Great Every,28,Small Large,Natural Given Normal Period,within quick,20.1
+207,16,General Light Still,104,Early Various Light Daily,Record System About Change,section clear,30.1
+208,79,System Regular Within Special,18,Special Local,Always Moment,moving example,15.3
+209,23,Result Large,79,Open Local Daily Great,Quiet Close About Quick,steady nearly every,17.4
+210,1,Quiet Steady Reason,136,Simple Along Several Again,Yearly Long Follow Quiet,inside high whole,26.9
+211,4,Matter Order Minor,21,Useful Number Always Open,Update Second,simple single,6.8
+212,96,Result Number Total Direct,24,General Yearly Steady,Record System About Change,section number system,2.6
+213,9,Yearly Clear,100,Direct Before Notice,Number Again Steady,early notice,39.2
+214,126,Ground Usual First,19,Partial Matter After,Bright Another Example,within,5.2
+215,67,Nearly Without,8,Support Direct,Toward Again Review Several,regular,30.2
+216,30,Morning Point,16,Plain Level Single Clear,Ready Recent Local,still quick,37.4
+217,31,Short Month,114,Summary Minor Because Simple,Weekly Summary,between,9.8
+218,1,Quiet Steady Reason,76,Easy Support Large,Number Again Steady,early,44.8
+219,3,Plain Record Various Section,75,Other Plain Weekly,Quiet Local Month Common,section second still,30.5
+220,13,Simple Plain Order After,20,Clear Second Notice Common,Month Before After,long,36.8
+221,94,Order Summary,71,Great Point,Review Notice Reason Local,partial notice quiet,4.2
+222,37,Moving First Long,2,Whole Month Various,Summary Again Notice Enough,high support,24.2
+223,3,Plain Record Various Section,119,Notice Between Nearly Other,Number Again Steady,given,37.0
+224,39,Ground Number Local First,1,Major High Along Careful,Always Around About,detail quick,38.2
+225,29,Order Moment Result Ground,53,Total Great,Level General,toward notice final,29.5
+226,70,Single Second,25,Today Between Month Small,Always Around About,within along,19.7
+227,75,Moving Within,9,Short Second Morning,After Nearly Later,careful today because,33.8
+228,1,Quiet Steady Reason,48,Before Order Ready,Review Notice Reason Local,change recent without,8.6
+229,62,System Always Single,25,Today Between Month Small,Always Around About,within along,21.8
+230,15,Number Final,13,Light Usual,Early Common,review given,20.6
+231,8,Partial Total Moving,17,About Still Quick,Another Detail Toward About,large,6.6
+232,1,Quiet Steady Reason,66,Steady Clear Another,Number Again Steady,final normal,16.0
+233,111,Recent Before Weekly,82,Easy Level,Local Along Another Toward,example before close,25.7
+234,28,Follow After,50,Total Other,Number Again Steady,today,6.6
+235,8,Partial Total Moving,6,Update Morning,Easy Strong,common update,25.4
+236,1,Quiet Steady Reason,34,Daily Short Special Inside,Before Update Given,section clear,46.6
+237,26,Inside Second Within,119,Notice Between Nearly Other,Number Again Steady,given,4.7
+238,71,After About Several Recent,43,Order High Single,Given Group Point Order,regular notice,46.5
+239,57,Public Within Between,13,Light Usual,Early Common,review given,31.6
+240,17,Steady Little,6,Update Morning,Easy Strong,common update,32.4
+241,11,Still Toward,1,Major High Along Careful,Always Around About,detail quick,5.9
+242,55,Ready Later Ground,97,Local Today Period Simple,Ground Several Major Direct,quick,28.1
+243,1,Quiet Steady Reason,34,Daily Short Special Inside,Before Update Given,section clear,29.9
+244,4,Matter Order Minor,85,Open Notice Little,Other Month,open group,21.0
+245,2,Again Inside Change Daily,20,Clear Second Notice Common,Month Before After,long,48.2
+246,40,Because Steady,41,Reason Change Outside,Final Several,point,3.0
+247,3,Plain Record Various Section,4,High Short,Bright Around,without daily again,19.8
+248,3,Plain Record Various Section,101,Today Still Along,Number Again Steady,various usual system,20.3
+249,12,Recent Light,20,Clear Second Notice Common,Month Before After,long,45.5
+250,144,Summary Change Strong Matter,77,Inside Close,Support Inside Final,change,21.3
+251,31,Short Month,15,High Change Several Careful,Always Around About,along again large,23.8
+252,1,Quiet Steady Reason,87,Steady Follow,Outside Because Level Ground,record yearly short,25.9
+253,107,Change Inside Several,5,System Result Because,Support Inside Final,before total useful,45.4
+254,31,Short Month,113,Nearly Quick Detail Every,Update Partial Around,example first,49.9
+255,35,Example Toward Common Another,1,Major High Along Careful,Always Around About,detail quick,39.2
+256,142,Review Support,110,Detail Direct,Final Several,about,33.7
+257,1,Quiet Steady Reason,31,Group Detail,Common Given Careful,summary moving review,26.2
+258,4,Matter Order Minor,1,Major High Along Careful,Always Around About,detail quick,36.7
+259,133,Every Daily Recent Outside,13,Light Usual,Early Common,review given,4.6
+260,6,Along Notice,89,Easy Period,Moment Month Major Minor,another minor,19.0
+261,8,Partial Total Moving,34,Daily Short Special Inside,Before Update Given,section clear,3.0
+262,63,Bright Ground Total Toward,68,Direct Detail Given,Number Again Steady,after still every,15.2
+263,137,Bright Between,65,Morning Matter Useful Still,High Small,various morning,48.7
+264,1,Quiet Steady Reason,19,Partial Matter After,Bright Another Example,within,35.6
+265,10,Level Point,1,Major High Along Careful,Always Around About,detail quick,42.8
+266,128,Example Simple Section Other,52,Major Public,Minor Review Summary,period result,25.1
+267,50,Support Reason,2,Whole Month Various,Summary Again Notice Enough,high support,37.1
+268,9,Yearly Clear,18,Special Local,Always Moment,moving example,8.7
+269,2,Again Inside Change Daily,43,Order High Single,Given Group Point Order,regular notice,25.2
+270,1,Quiet Steady Reason,13,Light Usual,Early Common,review given,49.3
+271,141,Every Later Second Final,30,Notice Second,Small Little Because Toward,daily steady little,24.1
+272,1,Quiet Steady Reason,2,Whole Month Various,Summary Again Notice Enough,high support,27.2
+273,34,Without Daily Level,118,Strong Every Second Month,Number Again Steady,clear,49.0
+274,131,Always Quick Second,1,Major High Along Careful,Always Around About,detail quick,8.8
+275,74,Moving Open High,18,Special Local,Always Moment,moving example,23.3
+276,129,Several Various Month,1,Major High Along Careful,Always Around About,detail quick,21.3
+277,6,Along Notice,91,Simple First Record Yearly,Morning Result Other Later,close level,21.0
+278,4,Matter Order Minor,18,Special Local,Always Moment,moving example,29.3
+279,105,Steady Every Little,130,Recent Number,Record Several,every,18.0
+280,21,Common Moment,4,High Short,Bright Around,without daily again,19.4
+281,28,Follow After,38,First Moving Level Daily,Useful Clear Often Quick,group yearly,49.2
+282,70,Single Second,62,Outside Given Still Recent,Quiet Close About Quick,close follow,41.8
+283,76,Useful Later About Period,43,Order High Single,Given Group Point Order,regular notice,24.1
+284,95,Short Number Result Simple,63,Usual Large,Ground Several Major Direct,around common,16.4
+285,24,About High Outside,42,Yearly After,Special Minor,useful daily level,29.5
+286,121,Again Given,58,Common Support Daily Morning,Without Total Month,point first,45.6
+287,88,Because Public,29,Change Update Notice Plain,High Small,plain major bright,16.5
+288,2,Again Inside Change Daily,1,Major High Along Careful,Always Around About,detail quick,1.7
+289,137,Bright Between,52,Major Public,Minor Review Summary,period result,10.8
+290,37,Moving First Long,124,Reason Other Summary,Ground Normal,often,3.7
+291,67,Nearly Without,3,Early Inside Enough Normal,Detail Plain,without inside,4.0
+292,32,Moment Ready,10,Moving Follow,Number Again Steady,morning,34.7
+293,47,Simple Careful Quick,63,Usual Large,Ground Several Major Direct,around common,28.2
+294,140,Issue Inside Useful Update,34,Daily Short Special Inside,Before Update Given,section clear,29.6
+295,12,Recent Light,3,Early Inside Enough Normal,Detail Plain,without inside,46.4
+296,44,Short Clear,122,Number Section,Early Close,change,32.2
+297,128,Example Simple Section Other,88,Large Month Period Ready,Natural Given Normal Period,open along,40.5
+298,114,Easy Often Regular,107,Enough Long After Number,Number Again Steady,quick short later,2.3
+299,29,Order Moment Result Ground,104,Early Various Light Daily,Record System About Change,section clear,14.3
+300,13,Simple Plain Order After,100,Direct Before Notice,Number Again Steady,early notice,5.6
+301,14,Between Minor Light Morning,1,Major High Along Careful,Always Around About,detail quick,46.7
+302,48,Again Short Update Often,79,Open Local Daily Great,Quiet Close About Quick,steady nearly every,29.3
+303,23,Result Large,39,About Period Light Detail,Again Light Open Simple,high,43.6
+304,104,Change Between,8,Support Direct,Toward Again Review Several,regular,36.7
+305,6,Along Notice,1,Major High Along Careful,Always Around About,detail quick,43.6
+306,40,Because Steady,6,Update Morning,Easy Strong,common update,18.5
+307,45,Enough Final Because Order,81,Final Minor Detail,Several Short Major Before,group local morning,46.2
+308,64,Public Large Without Simple,36,Enough Plain Matter,Simple Direct,still,39.2
+309,25,Plain Daily Light Simple,42,Yearly After,Special Minor,useful daily level,37.6
+310,115,Local Careful,32,Detail Quick Reason,Quiet Close About Quick,early,36.5
+311,4,Matter Order Minor,51,Open Single Again,Short Public,still nearly high,2.4
+312,56,Follow Outside Easy Yearly,6,Update Morning,Easy Strong,common update,49.8
+313,111,Recent Before Weekly,18,Special Local,Always Moment,moving example,7.3
+314,76,Useful Later About Period,30,Notice Second,Small Little Because Toward,daily steady little,45.9
+315,60,Update Matter,61,Morning Inside Order,Short Public,single month,44.8
+316,17,Steady Little,139,Special Because Always,Another Partial Often,regular recent ground,24.0
+317,87,Other Whole,6,Update Morning,Easy Strong,common update,3.6
+318,17,Steady Little,131,Minor Enough Light,Again Major,inside,14.0
+319,13,Simple Plain Order After,69,Strong Level Careful,Number Again Steady,close,41.4
+320,77,Strong Month Simple Special,3,Early Inside Enough Normal,Detail Plain,without inside,44.8
+321,135,Inside Weekly Usual,61,Morning Inside Order,Short Public,single month,39.3
+322,14,Between Minor Light Morning,113,Nearly Quick Detail Every,Update Partial Around,example first,33.4
+323,132,Outside Careful Small Between,42,Yearly After,Special Minor,useful daily level,41.2
+324,39,Ground Number Local First,48,Before Order Ready,Review Notice Reason Local,change recent without,31.8
+325,142,Review Support,1,Major High Along Careful,Always Around About,detail quick,7.6
+326,92,Happen Later Normal,91,Simple First Record Yearly,Morning Result Other Later,close level,8.9
+327,2,Again Inside Change Daily,36,Enough Plain Matter,Simple Direct,still,48.2
+328,76,Useful Later About Period,5,System Result Because,Support Inside Final,before total useful,9.5
+329,57,Public Within Between,78,Bright Update,Often Month Point Period,review,48.2
+330,29,Order Moment Result Ground,37,Useful Enough Between,Ground Several Major Direct,second,26.1
+331,11,Still Toward,8,Support Direct,Toward Again Review Several,regular,49.6
+332,42,Summary Moment Every Notice,44,Record System Clear,Support Public Always Large,bright,31.1
+333,57,Public Within Between,1,Major High Along Careful,Always Around About,detail quick,25.9
+334,90,Recent Simple,34,Daily Short Special Inside,Before Update Given,section clear,6.6
+335,20,Update Major,15,High Change Several Careful,Always Around About,along again large,15.3
+336,126,Ground Usual First,16,Plain Level Single Clear,Ready Recent Local,still quick,44.2
+337,87,Other Whole,132,Single Daily,Several Short Major Before,month long,10.5
+338,7,Today Local Early,108,System General Great Between,Summary Again Notice Enough,because,44.6
+339,11,Still Toward,2,Whole Month Various,Summary Again Notice Enough,high support,3.8
+340,17,Steady Little,56,Month Useful Little Happen,System Notice,outside,41.7
+341,32,Moment Ready,144,Matter Special Update,Update Second,summary change,13.6
+342,7,Today Local Early,16,Plain Level Single Clear,Ready Recent Local,still quick,46.9
+343,35,Example Toward Common Another,74,System General,Quiet Local Month Common,quiet yearly,15.2
+344,114,Easy Often Regular,13,Light Usual,Early Common,review given,6.3
+345,142,Review Support,22,Daily Level Later Nearly,Short Public,today system later,5.8
+346,71,After About Several Recent,18,Special Local,Always Moment,moving example,47.7
+347,17,Steady Little,46,Short Because Other,Weekly Summary,about still,21.4
+348,6,Along Notice,58,Common Support Daily Morning,Without Total Month,point first,3.4
+349,1,Quiet Steady Reason,22,Daily Level Later Nearly,Short Public,today system later,33.2
+350,99,Special Early Great Every,32,Detail Quick Reason,Quiet Close About Quick,early,49.9
+351,117,Total Ready Always,19,Partial Matter After,Bright Another Example,within,33.2
+352,104,Change Between,2,Whole Month Various,Summary Again Notice Enough,high support,7.7
+353,23,Result Large,134,Detail Within Strong Ground,Outside Because Level Ground,great common natural,9.4
+354,114,Easy Often Regular,13,Light Usual,Early Common,review given,1.4
+355,116,Summary System Long,28,Small Large,Natural Given Normal Period,within quick,25.3
+356,41,Ground Along Before Major,103,Little Every Record Toward,Quiet Weekly Clear,reason normal,34.0
+357,12,Recent Light,72,General Always Ground,Early Month,example weekly,21.4
+358,114,Easy Often Regular,31,Group Detail,Common Given Careful,summary moving review,44.9
+359,143,Inside Careful Another Whole,5,System Result Because,Support Inside Final,before total useful,2.7
+360,51,Strong Without Group Moving,91,Simple First Record Yearly,Morning Result Other Later,close level,42.1
+361,21,Common Moment,53,Total Great,Level General,toward notice final,19.8
+362,136,Partial Morning,8,Support Direct,Toward Again Review Several,regular,25.9
+363,49,Order Common Small,130,Recent Number,Record Several,every,25.7
+364,5,Weekly General,8,Support Direct,Toward Again Review Several,regular,16.5
+365,80,Follow Minor Long First,63,Usual Large,Ground Several Major Direct,around common,20.6
+366,14,Between Minor Light Morning,62,Outside Given Still Recent,Quiet Close About Quick,close follow,4.6
+367,3,Plain Record Various Section,34,Daily Short Special Inside,Before Update Given,section clear,16.7
+368,48,Again Short Update Often,136,Simple Along Several Again,Yearly Long Follow Quiet,inside high whole,40.2
+369,2,Again Inside Change Daily,1,Major High Along Careful,Always Around About,detail quick,40.1
+370,28,Follow After,1,Major High Along Careful,Always Around About,detail quick,25.5
+371,88,Because Public,99,Still System Great Reason,Record System About Change,around given,24.0
+372,76,Useful Later About Period,70,Weekly Open Record Usual,Summary Again Notice Enough,follow,6.6
+373,19,Group Local,30,Notice Second,Small Little Because Toward,daily steady little,40.8
+374,75,Moving Within,1,Major High Along Careful,Always Around About,detail quick,7.4
+375,38,Bright Close,66,Steady Clear Another,Number Again Steady,final normal,39.9
+376,37,Moving First Long,85,Open Notice Little,Other Month,open group,15.9
+377,4,Matter Order Minor,3,Early Inside Enough Normal,Detail Plain,without inside,41.9
+378,138,Large Total,4,High Short,Bright Around,without daily again,45.8
+379,39,Ground Number Local First,50,Total Other,Number Again Steady,today,44.0
+380,114,Easy Often Regular,100,Direct Before Notice,Number Again Steady,early notice,18.8
+381,83,Quick Before Careful Strong,28,Small Large,Natural Given Normal Period,within quick,41.6
+382,72,Review Second Close Enough,55,Quick High Moving,Change Light Second,given local usual,6.5
+383,135,Inside Weekly Usual,69,Strong Level Careful,Number Again Steady,close,30.8
+384,17,Steady Little,19,Partial Matter After,Bright Another Example,within,3.5
+385,35,Example Toward Common Another,5,System Result Because,Support Inside Final,before total useful,35.4
+386,101,Group Little Often,47,Large Change Strong Follow,Early Plain,section minor nearly,43.9
+387,23,Result Large,4,High Short,Bright Around,without daily again,18.1
+388,68,Large Normal Easy,92,Common First General Final,Several Short Major Before,quiet every normal,14.8
+389,68,Large Normal Easy,101,Today Still Along,Number Again Steady,various usual system,27.6
+390,26,Inside Second Within,32,Detail Quick Reason,Quiet Close About Quick,early,8.7
+391,118,Open Follow Later,47,Large Change Strong Follow,Early Plain,section minor nearly,23.7
+392,102,Outside Enough Major,74,System General,Quiet Local Month Common,quiet yearly,14.2
+393,67,Nearly Without,115,About Issue,Number Again Steady,support recent usual,28.9
+394,106,Recent Partial Period,47,Large Change Strong Follow,Early Plain,section minor nearly,31.9
+395,34,Without Daily Level,76,Easy Support Large,Number Again Steady,early,48.0
+396,17,Steady Little,25,Today Between Month Small,Always Around About,within along,2.8
+397,7,Today Local Early,31,Group Detail,Common Given Careful,summary moving review,32.6
+398,63,Bright Ground Total Toward,96,Natural Other Quick Ground,Later Inside Steady,period high plain,8.0
+399,7,Today Local Early,108,System General Great Between,Summary Again Notice Enough,because,46.8
+400,22,Easy Major,6,Update Morning,Easy Strong,common update,30.9
+401,73,Within Long,44,Record System Clear,Support Public Always Large,bright,13.7
+402,32,Moment Ready,66,Steady Clear Another,Number Again Steady,final normal,3.7
+403,137,Bright Between,10,Moving Follow,Number Again Steady,morning,36.6
+404,6,Along Notice,84,Record Notice Yearly First,Ready Recent Local,high,19.6
+405,1,Quiet Steady Reason,115,About Issue,Number Again Steady,support recent usual,12.3
+406,129,Several Various Month,1,Major High Along Careful,Always Around About,detail quick,3.7
+407,15,Number Final,77,Inside Close,Support Inside Final,change,44.3
+408,40,Because Steady,20,Clear Second Notice Common,Month Before After,long,13.2
+409,19,Group Local,48,Before Order Ready,Review Notice Reason Local,change recent without,21.3
+410,141,Every Later Second Final,20,Clear Second Notice Common,Month Before After,long,22.1
+411,60,Update Matter,80,Given Yearly Easy,Weekly Summary,final,34.6
+412,9,Yearly Clear,29,Change Update Notice Plain,High Small,plain major bright,3.5
+413,112,Point Group Often,50,Total Other,Number Again Steady,today,13.1
+414,143,Inside Careful Another Whole,33,Inside Second Order,Again Major,long,14.0
+415,18,Usual Clear Nearly,119,Notice Between Nearly Other,Number Again Steady,given,47.2
+416,38,Bright Close,120,Yearly Whole Support Careful,Number Again Steady,order,10.8
+417,39,Ground Number Local First,117,Short Period Yearly Always,Record Several,careful direct,21.7
+418,40,Because Steady,1,Major High Along Careful,Always Around About,detail quick,5.6
+419,7,Today Local Early,47,Large Change Strong Follow,Early Plain,section minor nearly,31.2
+420,125,Within Close Issue,112,Final Open,Several Short Major Before,still general,12.4
+421,121,Again Given,10,Moving Follow,Number Again Steady,morning,25.2
+422,105,Steady Every Little,12,Number Direct About,Result Second Example Ready,after strong steady,15.9
+423,10,Level Point,37,Useful Enough Between,Ground Several Major Direct,second,19.8
+424,71,After About Several Recent,66,Steady Clear Another,Number Again Steady,final normal,37.3
+425,3,Plain Record Various Section,7,Major Partial,Daily Steady Enough,high second,49.3
+426,35,Example Toward Common Another,115,About Issue,Number Again Steady,support recent usual,47.7
+427,1,Quiet Steady Reason,57,Support Before,Always Around About,notice useful,34.0
+428,8,Partial Total Moving,79,Open Local Daily Great,Quiet Close About Quick,steady nearly every,35.3
+429,92,Happen Later Normal,1,Major High Along Careful,Always Around About,detail quick,3.6
+430,59,Without Early,27,Issue Major Partial,Moment Month Major Minor,reason whole steady,36.0
+431,5,Weekly General,78,Bright Update,Often Month Point Period,review,24.3
+432,87,Other Whole,38,First Moving Level Daily,Useful Clear Often Quick,group yearly,30.3
+433,60,Update Matter,2,Whole Month Various,Summary Again Notice Enough,high support,19.4
+434,83,Quick Before Careful Strong,7,Major Partial,Daily Steady Enough,high second,19.3
