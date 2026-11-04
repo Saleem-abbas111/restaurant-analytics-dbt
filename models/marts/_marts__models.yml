@@ -13,12 +13,19 @@ models:
       - name: order_date
         tests:
           - not_null
+  
   - name: fct_menu_item_performance
     columns:
       - name: menu_item_id
         tests:
-          - unique
           - not_null
+      - name: menu_item_name
+        tests:
+          - not_null
+      - name: restaurant_id
+        tests:
+          - not_null
+
   - name: fct_inventory
     columns:
       - name: inventory_id

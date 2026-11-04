@@ -1,0 +1,326 @@
+
+.reviews-page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  min-width: 0;
+  color: #17202b;
+}
+
+.reviews-heading h1 {
+  margin: 0 0 6px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.reviews-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 14px;
+}
+
+/* Summary section */
+
+.reviews-summary {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.8fr) minmax(0, 1.5fr);
+  align-items: center;
+  gap: 32px;
+  padding: 28px 30px;
+  background: #ffffff;
+  border: 1px solid #dbe3eb;
+  border-radius: 14px;
+  box-shadow: 0 2px 6px rgba(15, 23, 42, 0.03);
+}
+
+.reviews-rating-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 9px;
+}
+
+.reviews-label {
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.reviews-rating-value {
+  color: #17202b;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.review-stars {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 3px;
+  color: #ff6938;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.reviews-subtitle {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.reviews-summary-details {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: center;
+  gap: 22px;
+  min-width: 0;
+}
+
+.reviews-detail-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  min-width: 0;
+}
+
+.reviews-detail-item span {
+  color: #64748b;
+  font-size: 13px;
+}
+
+.reviews-detail-item strong {
+  color: #17202b;
+  font-size: 15px;
+  font-weight: 650;
+  overflow-wrap: anywhere;
+}
+
+.reviews-detail-item small {
+  color: #94a3b8;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+/* Restaurant table panel */
+
+.reviews-table-panel {
+  width: 100%;
+  min-width: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border: 1px solid #dbe3eb;
+  border-radius: 14px;
+}
+
+.reviews-table-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 24px;
+  border-bottom: 1px solid #e5eaf0;
+}
+
+.reviews-table-heading h2 {
+  margin: 0 0 6px;
+  color: #17202b;
+  font-size: 17px;
+  font-weight: 650;
+}
+
+.reviews-table-heading p {
+  margin: 0;
+  color: #64748b;
+  font-size: 13px;
+}
+
+.reviews-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 280px;
+  max-width: 100%;
+  padding: 0 13px;
+  border: 1px solid #dbe3eb;
+  border-radius: 9px;
+  background: #ffffff;
+  color: #94a3b8;
+}
+
+.reviews-search:focus-within {
+  border-color: #ff6938;
+  box-shadow: 0 0 0 3px rgba(255, 105, 56, 0.1);
+}
+
+.reviews-search input {
+  width: 100%;
+  min-width: 0;
+  height: 46px;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: #17202b;
+  font: inherit;
+  font-size: 13px;
+}
+
+.reviews-search input::placeholder {
+  color: #a0acba;
+}
+
+.reviews-table-scroll {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.reviews-table {
+  width: 100%;
+  min-width: 850px;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.reviews-table thead {
+  background: #f8fafc;
+}
+
+.reviews-table th {
+  padding: 13px 18px;
+  color: #64748b;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  border-bottom: 1px solid #e5eaf0;
+}
+
+.reviews-table td {
+  padding: 17px 18px;
+  color: #475569;
+  font-size: 13px;
+  border-bottom: 1px solid #edf0f4;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.reviews-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.reviews-table tbody tr:hover {
+  background: #fafbfc;
+}
+
+.reviews-restaurant-name {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #17202b !important;
+  font-weight: 600;
+}
+
+.reviews-restaurant-name svg {
+  flex-shrink: 0;
+  color: #ff6938;
+}
+
+.reviews-table-rating {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.reviews-table-rating strong {
+  color: #17202b;
+  font-size: 13px;
+}
+
+.reviews-table-rating .review-stars {
+  gap: 2px;
+}
+
+.reviews-table-rating .review-stars svg {
+  width: 13px;
+  height: 13px;
+}
+
+.reviews-empty {
+  padding: 35px !important;
+  color: #94a3b8 !important;
+  text-align: center;
+}
+
+.reviews-table-footer {
+  padding: 14px 20px;
+  border-top: 1px solid #edf0f4;
+  color: #64748b;
+  font-size: 12px;
+}
+
+.reviews-state {
+  padding: 35px 20px;
+  color: #64748b;
+  font-size: 14px;
+  text-align: center;
+}
+
+.reviews-error {
+  padding: 16px 20px;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+  background: #fff7f7;
+  color: #b91c1c;
+}
+
+.reviews-error p {
+  margin: 5px 0 0;
+  font-size: 13px;
+}
+
+.reviews-data-note {
+  padding: 14px 18px;
+  border-radius: 9px;
+  background: #f8fafc;
+  color: #64748b;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+.reviews-data-note strong {
+  color: #334155;
+}
+
+/* Responsive layout */
+
+@media (max-width: 1100px) {
+  .reviews-summary {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+}
+
+@media (max-width: 700px) {
+  .reviews-summary {
+    padding: 22px 18px;
+  }
+
+  .reviews-summary-details {
+    grid-template-columns: 1fr;
+    gap: 17px;
+  }
+
+  .reviews-table-heading {
+    align-items: stretch;
+    flex-direction: column;
+    padding: 18px;
+  }
+
+  .reviews-search {
+    width: 100%;
+  }
+
+  .reviews-rating-value {
+    font-size: 32px;
+  }
+}

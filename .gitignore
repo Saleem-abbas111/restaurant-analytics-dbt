@@ -1,6 +1,8 @@
 # Secrets and local settings
 profiles.yml
 .env
+.env.*
+!.env.example
 *.p8
 *.pem
 .streamlit/secrets.toml

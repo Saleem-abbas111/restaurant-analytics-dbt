@@ -1,3 +1,4 @@
+
 with menu_items as (
     select
         menu_item_id,
@@ -24,7 +25,8 @@ categories as (
 
 valid_orders as (
     select
-        order_id
+        order_id,
+        cast(order_time as date) as order_date
     from {{ ref('stg_restaurant__order') }}
     where status = 'completed'
 ),
@@ -32,13 +34,16 @@ valid_orders as (
 sales as (
     select
         order_items.menu_item_id,
+        valid_orders.order_date,
         count(distinct order_items.order_id) as orders_containing_item,
         sum(order_items.quantity) as units_sold,
         sum(order_items.subtotal) as revenue
     from {{ ref('stg_restaurant__order_item') }} as order_items
     inner join valid_orders
         on order_items.order_id = valid_orders.order_id
-    group by order_items.menu_item_id
+    group by
+        order_items.menu_item_id,
+        valid_orders.order_date
 )
 
 select
@@ -47,6 +52,7 @@ select
     categories.category_name,
     menus.restaurant_id,
     menu_items.price,
+    sales.order_date,
     coalesce(sales.orders_containing_item, 0) as orders_containing_item,
     coalesce(sales.units_sold, 0) as units_sold,
     coalesce(sales.revenue, 0) as revenue
