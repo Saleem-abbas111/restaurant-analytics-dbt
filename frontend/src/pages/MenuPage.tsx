@@ -59,7 +59,6 @@ const categoryColors = [
 
 export function MenuPage({
   restaurantId,
-  range,
   refreshKey,
 }: MenuPageProps) {
   const [search, setSearch] = useState("")
