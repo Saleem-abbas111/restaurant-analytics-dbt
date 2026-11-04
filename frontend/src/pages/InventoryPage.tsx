@@ -177,7 +177,6 @@ export function InventoryPage({
         <SearchField
           value={search}
           onChange={setSearch}
-          placeholder="Search inventory..."
         />
       </div>
 
