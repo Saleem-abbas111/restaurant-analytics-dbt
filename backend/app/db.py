@@ -47,6 +47,8 @@ def _connect() -> SnowflakeConnection:
         login_timeout=90,  # a first login can take 10+ seconds
         network_timeout=60,
         enable_server_session_keep_alive_auto_detection=False,
+        # NEW: any single query is stopped after 60 seconds
+        session_parameters={"STATEMENT_TIMEOUT_IN_SECONDS": 60},
     )
 
 
