@@ -155,7 +155,6 @@ export function PageHeader({
     }
   }
 
-  const isOverview = page === "overview"
 
   return (
     <>
