@@ -116,10 +116,6 @@ python -m streamlit run dashboard\app.py
 
 Snowflake, dbt Core, Python, FastAPI, Pydantic, Snowflake Python Connector, React, TypeScript, Vite, Tailwind CSS, Recharts, Lucide, Streamlit, Google Gemini API. The interface design was created in Figma Make and ported into the React project.
 
-## Project notes
-
-See `PROJECT_STATUS.md` for the project history, decisions and open items.
-
 ## License
 
 MIT. See `LICENSE`.
