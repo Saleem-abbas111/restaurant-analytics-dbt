@@ -22,3 +22,5 @@ logs/
 .vscode/
 .DS_Store
 Thumbs.db
+*.zip
+figma_reference/
