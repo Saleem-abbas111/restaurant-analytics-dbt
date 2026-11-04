@@ -1,9 +1,5 @@
-# Python packages for this project. Install into the project's virtual environment:
-#   python -m pip install -r requirements.txt
-dbt-core==1.12.6
-dbt-snowflake==1.12.4
+fastapi
+uvicorn[standard]
 snowflake-connector-python
-streamlit
-pandas
-altair
+python-dotenv
 google-genai
