@@ -1,4 +1,5 @@
 import decimal
+import html
 import os
 
 import altair as alt
@@ -7,31 +8,73 @@ import snowflake.connector
 import streamlit as st
 
 ACCENT = "#FF6B35"
+SOFT = "#FFB085"
+GRID = "#E6EAF0"
 
-st.set_page_config(page_title="Restaurant Analytics", page_icon="🍽️", layout="wide")
+st.set_page_config(page_title="Restaurant Intelligence", page_icon="📊", layout="wide")
 
 st.markdown(
     """
     <style>
-    div[data-testid="stMetric"] {
-        background-color: rgba(255, 107, 53, 0.08);
-        border: 1px solid rgba(255, 107, 53, 0.35);
-        border-radius: 12px;
-        padding: 14px 18px;
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+    .stApp, .stMarkdown, h1, h2, h3, p, label, [data-testid="stMetric"] {
+        font-family: 'Inter', -apple-system, 'Segoe UI', sans-serif;
     }
+    .block-container { padding-top: 2rem; max-width: 1400px; }
+    h1 { font-weight: 700; letter-spacing: -0.5px; }
+    h2, h3 { font-weight: 650; }
+    [data-testid="stMetric"] {
+        background: #FFFFFF;
+        border: 1px solid #E6EAF0;
+        border-radius: 14px;
+        padding: 16px 18px;
+        box-shadow: 0 1px 2px rgba(16, 24, 40, 0.05);
+    }
+    [data-testid="stMetricLabel"] p { color: #6B7689; font-size: 0.85rem; }
+    [data-testid="stMetricValue"] div {
+        font-size: 1.55rem; font-weight: 700;
+        overflow: visible; text-overflow: clip;
+    }
+    [data-testid="stVerticalBlockBorderWrapper"] {
+        border-radius: 14px; background: #FFFFFF;
+    }
+    .badge-line {
+        border: 1px dashed #CBD3E0; border-radius: 10px; background: #FFFFFF;
+        padding: 8px 14px; margin: 6px 0 18px 0; color: #3A465C; font-size: 0.85rem;
+    }
+    .rank-row { display: flex; align-items: center; gap: 12px; margin: 10px 0; }
+    .rank-num {
+        width: 26px; height: 26px; border-radius: 8px; background: #EEF1F6;
+        display: flex; align-items: center; justify-content: center;
+        font-size: 0.8rem; font-weight: 600; flex-shrink: 0;
+    }
+    .rank-row:first-child .rank-num { background: #0F1B33; color: #FFFFFF; }
+    .rank-name { width: 34%; font-size: 0.9rem; line-height: 1.2; }
+    .rank-track { flex: 1; height: 10px; background: #EEF1F6; border-radius: 99px; overflow: hidden; }
+    .rank-fill { height: 100%; background: #FF6B35; border-radius: 99px; }
+    .rank-val { width: 90px; text-align: right; font-weight: 600; font-size: 0.9rem; }
+    .highlight { font-size: 0.92rem; color: #3A465C; line-height: 1.45; }
+    #MainMenu, footer { visibility: hidden; }
     </style>
     """,
     unsafe_allow_html=True,
 )
 
 
+def style(chart):
+    return (
+        chart.configure_view(strokeWidth=0)
+        .configure_axis(gridColor=GRID, domainColor=GRID, tickColor=GRID, labelColor="#6B7689", titleColor="#6B7689")
+    )
+
+
 # ---------- Connection and data loading ----------
 @st.cache_resource
 def get_connection():
     return snowflake.connector.connect(
-        account=os.environ["SNOWFLAKE_ACCOUNT"],
-        user=os.environ["SNOWFLAKE_USER"],
-        password=os.environ["SNOWFLAKE_PASSWORD"],
+        account=os.environ["SNOWFLAKE_ACCOUNT"].strip(),
+        user=os.environ["SNOWFLAKE_USER"].strip(),
+        password=os.environ["SNOWFLAKE_PASSWORD"].strip(),
         role="RESTAURANT_DBT_ROLE",
         warehouse="RESTAURANT_COMPUTE_WH",
         database="RESTAURANT_DB",
@@ -62,8 +105,9 @@ menu = run_query("select * from fct_menu_item_performance")
 inventory = run_query("select * from fct_inventory")
 reviews = run_query("select * from fct_restaurant_reviews")
 
-# ---------- Sidebar filters ----------
-st.sidebar.title("🍽️ Filters")
+# ---------- Sidebar ----------
+st.sidebar.markdown("### 📊 Restaurant Intelligence")
+st.sidebar.markdown("**Filters**")
 
 names = reviews[["restaurant_id", "restaurant_name"]].copy()
 duplicated = names["restaurant_name"].duplicated(keep=False)
@@ -108,10 +152,13 @@ f_inv = inventory[inventory["restaurant_id"].isin(selected_ids)]
 f_rev = reviews[reviews["restaurant_id"].isin(selected_ids)]
 
 # ---------- Header ----------
-st.title("🍽️ Restaurant Analytics")
-st.caption(
-    f"{len(selected_ids)} restaurant(s) selected | {start_day} to {end_day} | {basis}. "
-    "Source: dbt marts in RESTAURANT_DB.MARTS. The data is synthetic sample data."
+st.title("Restaurant Overview")
+st.caption("Monitor performance across your restaurant portfolio.")
+st.markdown(
+    f'<div class="badge-line"><b>Live Snowflake connection · Synthetic dataset</b> '
+    f"&nbsp;|&nbsp; {len(selected_ids)} restaurant(s) &nbsp;|&nbsp; {start_day} to {end_day} "
+    f"&nbsp;|&nbsp; {html.escape(basis)}</div>",
+    unsafe_allow_html=True,
 )
 
 tab_overview, tab_menu, tab_inventory, tab_reviews = st.tabs(
@@ -132,11 +179,11 @@ with tab_overview:
     )
 
     c1, c2, c3, c4, c5 = st.columns(5)
-    c1.metric("Sales", f"{total_sales:,.2f}")
-    c2.metric("Orders", f"{total_orders:,}")
-    c3.metric("Items sold", f"{total_items:,}")
-    c4.metric("Avg order value", f"{avg_order:,.2f}")
-    c5.metric("Avg rating", f"{avg_rating:.2f}")
+    c1.metric("Total Sales", f"{total_sales:,.2f}")
+    c2.metric("Total Orders", f"{total_orders:,}")
+    c3.metric("Items Sold", f"{total_items:,}")
+    c4.metric("Average Order Value", f"{avg_order:,.2f}")
+    c5.metric("Average Customer Rating", f"{avg_rating:.2f} / 5")
 
     daily = f_sales.groupby("order_date", as_index=False).agg(
         sales=(sales_col, "sum"), orders=("order_count", "sum")
@@ -145,63 +192,103 @@ with tab_overview:
     if daily.empty:
         st.info("No sales match the current filters.")
     else:
-        st.subheader("Sales per day")
-        area = (
-            alt.Chart(daily)
-            .mark_area(color=ACCENT, opacity=0.3, line={"color": ACCENT}, point={"color": ACCENT})
-            .encode(
-                x=alt.X("order_date:T", title=None),
-                y=alt.Y("sales:Q", title="Sales"),
-                tooltip=[
-                    alt.Tooltip("order_date:T", title="Date"),
-                    alt.Tooltip("sales:Q", title="Sales", format=",.2f"),
-                    alt.Tooltip("orders:Q", title="Orders"),
-                ],
+        with st.container(border=True):
+            head_left, head_right = st.columns([3, 1])
+            head_left.subheader("Sales Performance")
+            measure = head_right.radio(
+                "Measure", ["Sales", "Orders"], horizontal=True, label_visibility="collapsed"
             )
+            field = "sales" if measure == "Sales" else "orders"
+            area = (
+                alt.Chart(daily)
+                .mark_area(
+                    color=ACCENT,
+                    opacity=0.25,
+                    interpolate="monotone",
+                    line={"color": ACCENT, "strokeWidth": 2},
+                )
+                .encode(
+                    x=alt.X("order_date:T", title=None),
+                    y=alt.Y(f"{field}:Q", title=measure),
+                    tooltip=[
+                        alt.Tooltip("order_date:T", title="Date"),
+                        alt.Tooltip("sales:Q", title="Sales", format=",.2f"),
+                        alt.Tooltip("orders:Q", title="Orders"),
+                    ],
+                )
+            )
+            st.altair_chart(style(area))
+
+        by_restaurant = (
+            f_sales.groupby("restaurant", as_index=False)[sales_col]
+            .sum()
+            .rename(columns={sales_col: "sales"})
+            .sort_values("sales", ascending=False)
+            .head(10)
         )
-        st.altair_chart(area)
+        weekday_order = [
+            "Monday", "Tuesday", "Wednesday", "Thursday",
+            "Friday", "Saturday", "Sunday",
+        ]
+        by_weekday = (
+            daily.assign(weekday=daily["order_date"].dt.day_name())
+            .groupby("weekday", as_index=False)["sales"]
+            .sum()
+        )
 
         left, right = st.columns(2)
         with left:
-            st.subheader("Top restaurants by sales")
-            by_restaurant = (
-                f_sales.groupby("restaurant", as_index=False)[sales_col]
-                .sum()
-                .rename(columns={sales_col: "sales"})
-                .sort_values("sales", ascending=False)
-                .head(10)
-            )
-            bars = (
-                alt.Chart(by_restaurant)
-                .mark_bar(color=ACCENT, cornerRadiusEnd=4)
-                .encode(
-                    x=alt.X("sales:Q", title="Sales"),
-                    y=alt.Y("restaurant:N", sort="-x", title=None),
-                    tooltip=["restaurant", alt.Tooltip("sales:Q", format=",.2f")],
-                )
-            )
-            st.altair_chart(bars)
+            with st.container(border=True):
+                st.subheader("Top Performing Restaurants")
+                top_value = float(by_restaurant["sales"].max()) or 1.0
+                rows = ""
+                for rank, (name, value) in enumerate(
+                    zip(by_restaurant["restaurant"], by_restaurant["sales"]), start=1
+                ):
+                    width = max(float(value) / top_value * 100, 1)
+                    rows += (
+                        f'<div class="rank-row"><span class="rank-num">{rank}</span>'
+                        f'<span class="rank-name">{html.escape(str(name))}</span>'
+                        f'<div class="rank-track"><div class="rank-fill" style="width:{width:.1f}%"></div></div>'
+                        f'<span class="rank-val">{float(value):,.2f}</span></div>'
+                    )
+                st.markdown(rows, unsafe_allow_html=True)
         with right:
-            st.subheader("Sales by weekday")
-            weekday_order = [
-                "Monday", "Tuesday", "Wednesday", "Thursday",
-                "Friday", "Saturday", "Sunday",
-            ]
-            by_weekday = (
-                daily.assign(weekday=daily["order_date"].dt.day_name())
-                .groupby("weekday", as_index=False)["sales"]
-                .sum()
-            )
-            weekday_chart = (
-                alt.Chart(by_weekday)
-                .mark_bar(color="#FFB085", cornerRadiusEnd=4)
-                .encode(
-                    x=alt.X("weekday:N", sort=weekday_order, title=None),
-                    y=alt.Y("sales:Q", title="Sales"),
-                    tooltip=["weekday", alt.Tooltip("sales:Q", format=",.2f")],
+            with st.container(border=True):
+                st.subheader("Sales by Weekday")
+                weekday_chart = (
+                    alt.Chart(by_weekday)
+                    .mark_bar(color=ACCENT, cornerRadiusEnd=4)
+                    .encode(
+                        x=alt.X("weekday:N", sort=weekday_order, title=None),
+                        y=alt.Y("sales:Q", title="Sales"),
+                        tooltip=["weekday", alt.Tooltip("sales:Q", format=",.2f")],
+                    )
                 )
+                st.altair_chart(style(weekday_chart))
+
+        with st.container(border=True):
+            st.subheader("Performance Highlights")
+            best_day = by_weekday.sort_values("sales", ascending=False).iloc[0]
+            all_sales = f_sales["sales_all_open_and_completed"].sum()
+            share = (f_sales["completed_sales"].sum() / all_sales * 100) if all_sales else 0
+            active = f_sales["restaurant_id"].nunique()
+            h1, h2, h3 = st.columns(3)
+            h1.markdown(
+                f'<div class="highlight">📈 <b>{best_day["weekday"]}</b> has the highest weekday '
+                f'sales at {best_day["sales"]:,.2f}.</div>',
+                unsafe_allow_html=True,
             )
-            st.altair_chart(weekday_chart)
+            h2.markdown(
+                f'<div class="highlight">📊 Completed sales account for <b>{share:.1f}%</b> '
+                f"of total recorded sales.</div>",
+                unsafe_allow_html=True,
+            )
+            h3.markdown(
+                f'<div class="highlight">📦 The selection covers <b>{active} restaurants</b> '
+                f"from {start_day} to {end_day}.</div>",
+                unsafe_allow_html=True,
+            )
 
 # ---------- Menu ----------
 with tab_menu:
@@ -218,31 +305,33 @@ with tab_menu:
 
     left, right = st.columns(2)
     with left:
-        st.subheader("Revenue by category")
-        by_category = menu_view.groupby("category_name", as_index=False)["revenue"].sum()
-        cat_chart = (
-            alt.Chart(by_category)
-            .mark_bar(color=ACCENT, cornerRadiusEnd=4)
-            .encode(
-                x=alt.X("revenue:Q", title="Revenue"),
-                y=alt.Y("category_name:N", sort="-x", title=None),
-                tooltip=["category_name", alt.Tooltip("revenue:Q", format=",.2f")],
+        with st.container(border=True):
+            st.subheader("Revenue by category")
+            by_category = menu_view.groupby("category_name", as_index=False)["revenue"].sum()
+            cat_chart = (
+                alt.Chart(by_category)
+                .mark_bar(color=ACCENT, cornerRadiusEnd=4)
+                .encode(
+                    x=alt.X("revenue:Q", title="Revenue"),
+                    y=alt.Y("category_name:N", sort="-x", title=None),
+                    tooltip=["category_name", alt.Tooltip("revenue:Q", format=",.2f")],
+                )
             )
-        )
-        st.altair_chart(cat_chart)
+            st.altair_chart(style(cat_chart))
     with right:
-        st.subheader(f"Top {top_n} items by revenue")
-        top_items = menu_view.nlargest(top_n, "revenue")
-        item_chart = (
-            alt.Chart(top_items)
-            .mark_bar(color="#FFB085", cornerRadiusEnd=4)
-            .encode(
-                x=alt.X("revenue:Q", title="Revenue"),
-                y=alt.Y("menu_item_name:N", sort="-x", title=None),
-                tooltip=["menu_item_name", "category_name", alt.Tooltip("revenue:Q", format=",.2f")],
+        with st.container(border=True):
+            st.subheader(f"Top {top_n} items by revenue")
+            top_items = menu_view.nlargest(top_n, "revenue")
+            item_chart = (
+                alt.Chart(top_items)
+                .mark_bar(color=SOFT, cornerRadiusEnd=4)
+                .encode(
+                    x=alt.X("revenue:Q", title="Revenue"),
+                    y=alt.Y("menu_item_name:N", sort="-x", title=None),
+                    tooltip=["menu_item_name", "category_name", alt.Tooltip("revenue:Q", format=",.2f")],
+                )
             )
-        )
-        st.altair_chart(item_chart)
+            st.altair_chart(style(item_chart))
 
     st.subheader("All menu items")
     table = menu_view[
@@ -299,34 +388,36 @@ with tab_inventory:
 
         left, right = st.columns(2)
         with left:
-            st.subheader("Average quantity by category")
-            by_cat = inv_view.groupby("ingredient_category_name", as_index=False)[
-                "quantity_on_hand"
-            ].mean()
-            inv_chart = (
-                alt.Chart(by_cat)
-                .mark_bar(color=ACCENT, cornerRadiusEnd=4)
-                .encode(
-                    x=alt.X("quantity_on_hand:Q", title="Average quantity"),
-                    y=alt.Y("ingredient_category_name:N", sort="-x", title=None),
-                    tooltip=[
-                        "ingredient_category_name",
-                        alt.Tooltip("quantity_on_hand:Q", format=",.1f"),
-                    ],
+            with st.container(border=True):
+                st.subheader("Average quantity by category")
+                by_cat = inv_view.groupby("ingredient_category_name", as_index=False)[
+                    "quantity_on_hand"
+                ].mean()
+                inv_chart = (
+                    alt.Chart(by_cat)
+                    .mark_bar(color=ACCENT, cornerRadiusEnd=4)
+                    .encode(
+                        x=alt.X("quantity_on_hand:Q", title="Average quantity"),
+                        y=alt.Y("ingredient_category_name:N", sort="-x", title=None),
+                        tooltip=[
+                            "ingredient_category_name",
+                            alt.Tooltip("quantity_on_hand:Q", format=",.1f"),
+                        ],
+                    )
                 )
-            )
-            st.altair_chart(inv_chart)
+                st.altair_chart(style(inv_chart))
         with right:
-            st.subheader("Quantity distribution")
-            hist = (
-                alt.Chart(inv_view)
-                .mark_bar(color="#FFB085")
-                .encode(
-                    x=alt.X("quantity_on_hand:Q", bin=alt.Bin(maxbins=20), title="Quantity on hand"),
-                    y=alt.Y("count():Q", title="Records"),
+            with st.container(border=True):
+                st.subheader("Quantity distribution")
+                hist = (
+                    alt.Chart(inv_view)
+                    .mark_bar(color=SOFT)
+                    .encode(
+                        x=alt.X("quantity_on_hand:Q", bin=alt.Bin(maxbins=20), title="Quantity on hand"),
+                        y=alt.Y("count():Q", title="Records"),
+                    )
                 )
-            )
-            st.altair_chart(hist)
+                st.altair_chart(style(hist))
 
         st.subheader("⚠️ Low-stock items")
         st.caption("Ingredients use different units, so compare quantities with care.")
@@ -370,16 +461,17 @@ with tab_reviews:
             f"{(rated['average_rating'] * rated['review_count']).sum() / rated['review_count'].sum():.2f}",
         )
 
-        st.subheader("How restaurant ratings are spread")
-        spread = (
-            alt.Chart(rated)
-            .mark_bar(color=ACCENT, cornerRadiusEnd=4)
-            .encode(
-                x=alt.X("average_rating:Q", bin=alt.Bin(maxbins=10), title="Average rating"),
-                y=alt.Y("count():Q", title="Restaurants"),
+        with st.container(border=True):
+            st.subheader("How restaurant ratings are spread")
+            spread = (
+                alt.Chart(rated)
+                .mark_bar(color=ACCENT, cornerRadiusEnd=4)
+                .encode(
+                    x=alt.X("average_rating:Q", bin=alt.Bin(maxbins=10), title="Average rating"),
+                    y=alt.Y("count():Q", title="Restaurants"),
+                )
             )
-        )
-        st.altair_chart(spread)
+            st.altair_chart(style(spread))
 
         rating_config = {
             "restaurant_name": "Restaurant",
