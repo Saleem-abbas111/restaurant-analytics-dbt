@@ -1,4 +1,5 @@
 import logging
+import os
 
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
@@ -13,13 +14,19 @@ from app.routes.analyst import router as analyst_router
 
 logger = logging.getLogger("restaurant_api")
 
+# Websites allowed to call this API. On a host, set ALLOWED_ORIGINS to the
+# address of the React site (several addresses can be separated by commas).
+DEFAULT_ORIGINS = "http://localhost:5173,http://127.0.0.1:5173"
+ALLOWED_ORIGINS = [
+    origin.strip().rstrip("/")
+    for origin in os.environ.get("ALLOWED_ORIGINS", DEFAULT_ORIGINS).split(",")
+    if origin.strip()
+]
+
 app = FastAPI(title="Restaurant Intelligence API", version="0.1.0")
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=[
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-    ],
+    allow_origins=ALLOWED_ORIGINS,
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
